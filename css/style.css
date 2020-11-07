@@ -72,12 +72,49 @@ img{
 
 .showcase-form{
     position: relative;
-    top:60px;
+    top:100px;
     height:350px;
     width:300px;
     z-index:100;
     padding:40px;
     justify-self: flex-end;
+}
+.showcase-form .form-control{
+    margin:30px 0;
+}
+.showcase-form input[type="text"],
+.showcase-form input[type="email"]{
+    padding:3px;
+    border:0;
+    border-bottom:1px solid #b3bac4;
+    font-size:16px;
+    width:100%;
+}
+.showcase-form input:focus{
+    outline: none;
+}
+.showcase::before,.showcase::after{
+    content:'';
+    background:var(--primary-color);
+    height:100px;
+    position:absolute;
+    right:0;
+    left:0;
+    bottom:-60px;
+    transform:skewY(-3deg);
+    -webkit-transform:skewY(-3deg);
+    -moz-transform:skewY(-3deg);
+    -ms-transform:skewY(-3deg);
+
+}
+/* Stats */
+.stats{
+    padding-top:100px;
+}
+.stats-heading{
+    max-width:500px;
+    margin:auto;
+    background:red;
 }
 
 /* Utilities */
@@ -97,6 +134,28 @@ img{
     margin:10px;
 
 }
+.btn{
+    display:inline-block;
+    padding:10px 30px;
+    border:0;
+    border-radius:5px;
+    background:var(--primary-color);
+    color:#fff;
+    cursor:pointer;
+
+}
+.btn-outline{
+    background:transparent;
+    border:1px solid #fff;
+}
+.btn:hover{
+    transform:scale(0.9);
+}
+
+.text-center{
+    text-align:center;
+}
+
 .flex{
     display:flex;
     justify-content:center;
@@ -112,3 +171,9 @@ img{
     align-items:center;
     height:100%;
 }
+
+.grid-3{
+    grid-template-columns: repeat(3,1fr);
+}
+
+
