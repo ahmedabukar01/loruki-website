@@ -75,7 +75,7 @@ img{
 
 .showcase-form{
     position: relative;
-    top:120px;
+    top:110px;
     height:350px;
     width:300px;
     z-index:100;
@@ -198,6 +198,16 @@ img{
     background-color:var(--light-color);
     color:#333;
 }
+.bg-light a,
+.btn-light a,
+.bg-dark a,
+.btn-dark a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-primary a,
+.btn-primary a{
+    color:#fff;
+}
 
 .text-center{
     text-align:center;
@@ -235,6 +245,81 @@ img{
 .cloud .grid{
     grid-template-columns: 4fr 3fr;
 }
+/* languages */
+.languages .card{
+    text-align:center;
+    margin:18px 10px 40px;
+    transition: transform 0.1s ease-in;
+}
+.languages .flex{
+    flex-wrap: wrap;
+}
+.languages .card h4{
+    font-size:20px;
+    margin-bottom:10px;
+}
+.languages .card:hover{
+    transform:translateY(-15px);
+}
+/* Features */
+.features-head img
+{
+    width:200px;
+    justify-self:flex-end;
+}
+.features-sub-head img{
+    width:300px;
+    justify-self:flex-end;
+}
+.features-main .card>i{
+    margin-right:20px;
+}
+.features.main .grid{
+    padding:30px;
+}
+/* footer*/
+.footer .social a{
+    margin:0 10px;
+}
 
-
+/* Tablates and under */
+@media (max-width:768px){
+    .grid,
+    .showcase .grid,
+    .stats .grid,
+    .cli .grid,
+    .cloud .grid{
+        grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+    .showcase{
+        height:auto;
+        text-align:center;
+    }
+    .showcase-text{
+        text-align:center;
+        margin-top:40px;
+    }
+    .showcase-form{
+        justify-self:center;
+        margin:auto;
+    }
+    .cli .grid >*:first-child{
+        grid-column: 1;
+        grid-row: 1;
+    }
+}
+/* Mobile phones */
+@media (max-width:500px){
+    .navbar{
+        height:110px;
+    }
+    .navbar .flex {
+        flex-direction: column;
+    }
+    .navbar ul {
+        padding: 10px;
+        background:rgb(0,0,0,0.5);
+    }
+}
 
