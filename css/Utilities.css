@@ -68,3 +68,19 @@
 .p-5{
     padding:4rem;
 }
+
+/* Alert */
+.alert{
+    background-color:var(--light-color);
+    padding:10px 20px;
+    margin:15px 0;
+    font-weight:bold;
+
+}
+.alert i{
+    margin-right:10px;
+}
+.alert-success{
+    background: var(--success-color);
+    color:#fff;
+}
